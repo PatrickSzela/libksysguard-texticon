@@ -1,0 +1,38 @@
+{
+  "name": "com.patrickszela.texticon",
+  "prettyName": "Text with Icon",
+  "version": "1.0.0",
+  "description": "A compact and highly configurable Display Style for Plasma's System Monitor",
+  "homepage": "https://github.com/PatrickSzela/libksysguard-texticon",
+  "private": true,
+  "type": "module",
+  "main": "src/main.ts",
+  "scripts": {
+    "dev": "npm run clean && npm run build && npm run build:prepare && npm run build:install",
+    "check": "tsc -b --noEmit",
+    "build": "tsc && vite build",
+    "build:prepare": "./bin/prepare.sh",
+    "build:package": "./bin/package.sh",
+    "build:install": "./bin/install.sh",
+    "clean": "rm -rf ./dist || true"
+  },
+  "keywords": [],
+  "author": "Patryk Szela",
+  "license": "ISC",
+  "packageManager": "pnpm@10.17.1",
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "@babel/runtime": "^7.28.4",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@types/node": "^24.5.2",
+    "deepmerge": "^4.3.1",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.7"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "KPlugin": {
+    "Name": "$prettyName",
+    "Icon": "view-list-details",
+    "Id": "$name",
+    "Website": "$homepage",
+    "License": "$license",
+    "Version": "$version",
+    "Authors": [
+      {
+        "Name": "$author"
+      }
+    ]
+  },
+  "X-KDE-ParentApp": "org.kde.plasmashell",
+  "KPackageStructure": "KSysguard/SensorFace"
+}
