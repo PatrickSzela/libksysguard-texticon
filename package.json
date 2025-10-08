@@ -1,7 +1,7 @@
 {
   "name": "com.patrickszela.texticon",
   "prettyName": "Text with Icon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A compact and highly configurable Display Style for Plasma's System Monitor",
   "homepage": "https://github.com/PatrickSzela/libksysguard-texticon",
   "private": true,
