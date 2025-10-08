@@ -60,7 +60,7 @@ export function buildSensorFormatter(
     type: "sensor",
     sensorId,
     sensorIndex,
-    precision: data?.['precision'] ?? 1
+    precision: data?.["precision"] ?? 1,
   };
 }
 
@@ -166,6 +166,8 @@ export function updateConfig(
     return [buildErrorFormatter(e)];
   }
 
+  if (!data.length) return buildDefaultConfig(sensorIds, globalData);
+
   return data.map((i) => {
     if (Array.isArray(i)) {
       return buildErrorFormatter("Array inside of formatter");
@@ -217,7 +219,7 @@ export function applyConfigToComponent(
   modelData: Formatter,
   sensor: KSysGuard.Sensor | null,
   sensors: KSysGuard.Sensor[],
-  kirigami: Record<string, unknown>
+  kirigami: Record<string, unknown>,
 ) {
   if (!sensors?.length) return;
 
