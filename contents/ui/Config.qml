@@ -125,19 +125,19 @@ ColumnLayout {
             actions: [
                 Kirigami.Action {
                     text: "Icon"
-                    icon.name: "insert-emoticon"
+                    icon.name: "symbols-symbolic"
                     tooltip: "Append Icon to the Formatter"
                     onTriggered: iconDialog.open()
                 },
                 Kirigami.Action {
                     text: "Sensor"
-                    icon.name: "indicator-sensors-chip"
+                    icon.name: "show-gpu-effects-symbolic"
                     tooltip: "Append Sensor to the Formatter"
                     onTriggered: formatter.addSensor()
                 },
                 Kirigami.Action {
                     text: "Text"
-                    icon.name: "tool-text-symbolic"
+                    icon.name: "edit-select-text-symbolic"
                     tooltip: "Append Text to the Formatter"
                     onTriggered: formatter.addText()
                 },
