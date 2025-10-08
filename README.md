@@ -21,7 +21,14 @@ Compact, yet highly configurable sensor face for KDE Plasma's System Monitor, id
 > This Sensor Face is not yet available on the KDE Store, but that might change in the future
 
 1. Download the most recent release (`.zip` file) from [Releases](https://github.com/PatrickSzela/libksysguard-texticon/releases)
-2. Place the contents of the downloaded release under `~/.local/share/ksysguard/sensorfaces/`
+2. Place the contents of the downloaded release under `~/.local/share/ksysguard/sensorfaces/` (create if missing)
+
+## Usage
+
+1. Add a System Monitor widget to your desktop or a panel
+2. Under _Appearance_ tab, set _Display style_ to `Text with Icon`
+3. Add your desired sensors under _Sensors Details_ tab to the _Sensors_ list
+4. By default, the widget will display the default configuration - set up your desired layout under _Text with Icon Details_ tab by adding items to the _Formatter_ field with the available buttons: _Icon_, _Sensor_ or _Text_
 
 ## Configuration
 
